@@ -1,3 +1,5 @@
-const fs = require('fs')
+sum = require('./utils.js')
 
-fs.appendFileSync('readme.md',"Hey there i'm here for you")
+console.log(
+    sum(45,2)
+)
