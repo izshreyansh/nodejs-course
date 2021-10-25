@@ -1,5 +1,5 @@
-sum = require('./utils.js')
+const getNotes = require('./notes.js')
 
 console.log(
-    sum(45,2)
+    getNotes()
 )
