@@ -1,15 +1,14 @@
 const validator = require('validator')
 const chalk = require('chalk')
 const getNotes = require('./notes.js')
+//const yargs = require('yargs')
 
-console.log(
-    validator.isURL('http://sh')
-)
+const command = process.argv[2]
 
-console.log(
-    chalk.bold.red('No Drivers are available.')
-)
+console.log(process.argv)
 
-console.log(
-    chalk.bold.yellow('Taxi is available right now.')
-)
+if(command == 'add') {
+    console.log('Adding note')
+} else if(command == 'remove') {
+    console.log('Removing Note')
+}
